@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+  <meta charset="utf-8">
   <title>Веб-студия Нердс</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-  <header>
-    <nav class="main-navigation">
-      <div class="main-logo">
+  <header class="container">
+    <nav class="main-navigation clearfix">
+      <div class="header-logo">
         <img src="img/nerds-logo.png" alt="Nerds logo" width="160" height="65">
       </div>
-      <ul>
+      <ul class="link-list">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <div class="cart">Корзина</div>
+      <div class="cart"><a href="#">Корзина</a></div>
     </nav>
     <div class="gallery">
       <div class="gallery-slide">
@@ -30,7 +32,7 @@
           <img src="img/slide-1.png" alt="3 iPhones with app on screen" width="698" height="413">
         </div>
       </div>
-      <div class="gallery-slide">
+      <!-- <div class="gallery-slide">
         <h2>
           Долго, дорого, скрупулезно.
         </h2>
@@ -41,8 +43,8 @@
         <div class="gallery-slide-img">
           <img src="img/slide-2.png" alt="Two iMac with app on screen" width="663" height="430">
         </div>
-      </div>
-      <div class="gallery-slide">
+      </div> -->
+      <!-- <div class="gallery-slide">
         <h2>
           Долго, дорого, скрупулезно.
         </h2>
@@ -53,11 +55,11 @@
         <div class="gallery-slide-img">
           <img src="img/slide-3.png" alt="iPhone and iPad with app on sreen" width="759" height="411">
         </div>
-      </div>
+      </div> -->
     </div>
   </header>
   <main class="container">
-    <div class="services">
+    <div class="services clearfix">
       <div class="services-item">
         <img src="img/feature-item-1.jpg" alt="Laptop on red background" width="300" height="146">
         <b>Веб-сайты</b>
@@ -81,12 +83,14 @@
         <button class="btn btn-red">Заказать</button>
       </div>
     </div>
-    <div class="presention">
-      <div class="presention-left">
+    <div class="presention clearfix">
+      <div class="introduction">
         <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>
           Исповедуем принципы минимализма и чистотыю Ставим математический расчет превыше креатива. Работаем на покладая рук, как роботы.
         </p>
+      </div>
+      <div class="presention-left">
         <b>Выполняем заказы на разработку:</b>
         <ul>
           <li>Веб-сайтов любой сложности</li>
@@ -95,7 +99,6 @@
         </ul>
       </div>
       <div class="presention-right">
-        <img src="img/nerds-illustration.png" alt="Festive Nerds logo" width="306" height="208">
         <p>С 2004 года любим точность во всем:</p>
         <ul>
           <li>
@@ -113,7 +116,7 @@
         </ul>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects clearfix">
       <div class="projects-item">
         <img src="img/html-academy-logo.png" alt="Html-academy logo" width="199" height="68">
       </div>
@@ -127,9 +130,11 @@
         <img src="img/mishka-logo.png" alt="Mishka logo" width="173" height="84">
       </div>
     </div>
-    <div class="map"></div>
+    <div class="map">
+      <img src="img/map.jpg" alt="How to find us" width="1440" height="416">
+    </div>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer clearfix container">
     <div class="social">
       <a href="#" class="social-btn">Вконтакте</a>
       <a href="#" class="social-btn">Фейсбук</a>
