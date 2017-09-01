@@ -1,3 +1,4 @@
+/*index.html*/
 body,
 html {
   min-width: 1440px;
@@ -110,16 +111,37 @@ html {
   width: 560px;
 }
 
+/* Catalog.html*/
 
+.page-title {
+    width: 760px;
+    font-size: 55px;
+    margin: 95px auto;
+}
 
+.preferences {
+  float: left;
+  width: 260px;
+}
 
+.templates {
+  float: right;
+  width: 760px;
 
+  font-size: 0;
+}
 
+.templates-item {
+  display: inline-block;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 35px;
+}
 
+.templates-item:nth-child(2n) {
+  margin-right: 0px;
+}
 
-
-
-
-
-
-
+.template-description {
+  display: none;
+}

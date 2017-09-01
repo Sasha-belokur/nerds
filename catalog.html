@@ -17,81 +17,81 @@
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <div class="cart">Корзина</div>
+      <div class="cart"><a href="#">Корзина</a></div>
     </nav>
     <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header> 
-  <main class="container">
+  <main class="container clearfix">
+    <div class="preferences">
+      <form action="#" method="get">
+        <h3>Стоимость</h3>
+        <div class="range"></div>
+        <label for="min-price">От</label>
+        <input type="text" name="min-price" id="min-price">
+        <label for="max-price">До</label>
+        <input type="text" name="max-price" id="max-price">
+        <h3>Сетка</h3>
+        <ul class="template-grid">
+          <li>
+            <label for="adaptive">Адаптивная</label>
+            <input type="radio" name="grid" id="adaptive">
+          </li>
+          <li>
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" name="grid" id="fixed">
+          </li>
+          <li>
+            <label for="rubber">Резиновая</label>
+            <input type="radio" name="grid" id="rubber">
+          </li>
+        </ul>
+        <h3>Особенности</h3>
+        <ul class="template-features">
+          <li>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" name="slider" id="slider" checked>
+          </li>
+          <li>
+            <label for="advantages">Преимущества</label>
+            <input type="checkbox" name="advantages" id="advantages" disabled>
+          </li>
+          <li>
+            <label for="news">Новости</label>
+            <input type="checkbox" name="news" id="news" checked>
+          </li>
+          <li>
+            <label for="gallery">Галерея</label>
+            <input type="checkbox" name="gallery" id="gallery">
+          </li>
+          <li>
+            <label for="cart">Корзина</label>
+            <input type="checkbox" name="cart" id="cart">
+          </li>
+        </ul>
+      </form>
+    </div>
     <div class="catalog">
-      <div class="preferences">
-        <form action="#" method="get">
-          <h3>Стоимость</h3>
-          <div class="range"></div>
-          <label for="min-price">От</label>
-          <input type="text" name="min-price" id="min-price">
-          <label for="max-price">До</label>
-          <input type="text" name="max-price" id="max-price">
-          <h3>Сетка</h3>
-          <ul class="template-grid">
-            <li>
-              <label for="adaptive">Адаптивная</label>
-              <input type="radio" name="grid" id="adaptive">
-            </li>
-            <li>
-              <label for="fixed">Фиксированная</label>
-              <input type="radio" name="grid" id="fixed">
-            </li>
-            <li>
-              <label for="rubber">Резиновая</label>
-              <input type="radio" name="grid" id="rubber">
-            </li>
-          </ul>
-          <h3>Особенности</h3>
-          <ul class="template-features">
-            <li>
-              <label for="slider">Слайдер</label>
-              <input type="checkbox" name="slider" id="slider" checked>
-            </li>
-            <li>
-              <label for="advantages">Преимущества</label>
-              <input type="checkbox" name="advantages" id="advantages" disabled>
-            </li>
-            <li>
-              <label for="news">Новости</label>
-              <input type="checkbox" name="news" id="news" checked>
-            </li>
-            <li>
-              <label for="gallery">Галерея</label>
-              <input type="checkbox" name="gallery" id="gallery">
-            </li>
-            <li>
-              <label for="cart">Корзина</label>
-              <input type="checkbox" name="cart" id="cart">
-            </li>
-          </ul>
-        </form>
+      <div class="sorting">
+        <h3>Сортировать</h3>
+        <ul>
+          <li class="sort-type">
+            <a href="#">По цене</a>
+          </li>
+          <li class="sort-type">
+            <a href="#">По типу</a>
+          </li>
+          <li class="sort-type">
+            <a href="#">По названию</a>
+          </li>
+          <li class="sort-direction desc">
+            <a href="#" title="По убыванию">По убыванию</a>
+          </li>
+          <li class="sort-direction asc">
+            <a href="#" title="По возростанию">По убыванию</a>
+          </li>
+        </ul>
       </div>
       <div class="templates">
-        <div class="sort">
-          <h3>Сортировать</h3>
-          <ul class="sort">
-            <li class="sort-type">
-              <a href="#">По цене</a>
-            </li>
-            <li class="sort-type">
-              <a href="#">По типу</a>
-            </li>
-            <li class="sort-type">
-              <a href="#">По названию</a>
-            </li>
-            <li class="sort-direction desc">
-              <a href="#" title="По убыванию">По убыванию</a>
-            </li>
-            <li class="sort-direction asc">
-              <a href="#" title="По возростанию">По убыванию</a>
-            </li>
-          </ul>
-        </div>
         <div class="templates-item">
           <img src="img/template-sedona.jpg" alt="Screenshoot of template Sedona" width="360" height="576">
           <header class="template-header"><span></span></header>
@@ -155,7 +155,7 @@
       </div>
     </div>
   </main>
-  <footer class="main-footer">
+   <footer class="main-footer clearfix container">
     <div class="social">
       <a href="#" class="social-btn">Вконтакте</a>
       <a href="#" class="social-btn">Фейсбук</a>
