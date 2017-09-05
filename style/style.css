@@ -309,6 +309,7 @@ body {
 .services-list li {
   position: relative;
 
+  margin-bottom: 30px;
   margin-left: 35px;
 }
 
@@ -329,23 +330,76 @@ body {
   width: 400px;
 }
 
-.presetion-right p {
+.presention-right > p {
   margin: 0;
-  margin-bottom: 
+  margin-bottom: 50px;
 
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.projects {
-  height: 180px;
-  padding: 0 30px;
+.our-score {
+  margin: 0;
+  padding: 0;
 
   font-size: 0;
+
+  list-style: none;
+}
+
+.our-score li p {
+  margin: 0;
+  margin-top: 25px
+}
+
+.our-score li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  min-height: 100px;
+  margin-right: 20px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.our-score b {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.our-score sup {
+  top: -12px;
+  font-size: 30px;
+}
+
+.projects {
+  min-height: 110px;
+  margin-bottom: 80px;
+  padding: 35px 30px;
+
+  font-size: 0;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .projects-item {
   display: inline-block;
-  width: 275px;
+  width: 215px;
+  height: 110px;
+  margin-right: 80px;
+
+  background: url("../img/sprite.png") no-repeat 0 0;
+  opacity: 0.3;
+}
+
+.projects-item:last-child {
+  margin-right: 0px;
+}
+
+.projects-item:hover {
+  opacity: 1;
 }
 
 .map {
