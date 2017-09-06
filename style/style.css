@@ -123,7 +123,7 @@ body {
   width: 15px;
   height: 15px;
 
-  background: url("../img/sprite.png") no-repeat -224px -5px;
+  background: url("../img/sprite.png") no-repeat -269px -20px;
   opacity: 0.3;
 }
 
@@ -392,6 +392,8 @@ body {
 
   background: url("../img/sprite.png") no-repeat 0 0;
   opacity: 0.3;
+
+  transition: all 0.3s;
 }
 
 .projects-item:last-child {
@@ -400,6 +402,22 @@ body {
 
 .projects-item:hover {
   opacity: 1;
+}
+
+.projects-item.html-academy {
+  background-position: -12px -125px;
+}
+
+.projects-item.borodinski {
+  background-position: -16px -7px;;
+}
+
+.projects-item.pink {
+  background-position: -315px -117px;;
+}
+
+.projects-item.mishka {
+  background-position: -312px -8px;
 }
 
 .map {
@@ -416,13 +434,82 @@ body {
   float: left;
   width: 300px;
   margin-right: 100px;
+
+  font-size: 0;
+}
+
+.social-btn {
+  position: relative;
+
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+
+  background-color: #E1E1E1;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #E74246;
+}
+
+.social-btn:active {
+  background-color: #D7373B;
+}
+
+.social-btn:active::after {
+  opacity: 0.3;
+}
+
+.social-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+
+  background: url("../img/sprite.png") no-repeat;
+
+  transition: all 0.3s;
+}
+
+.vk::after {
+  background-position: -257px -228px;;
+}
+
+.fb::after {
+  background-position: -260px -73px;
+}
+
+.inst::after {
+  background-position: -264px -134px;;
 }
 
 .discount {
   float: left;
   width: 560px;
+  padding-top: 10px;
 }
 
+.discount strong {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.discount p {
+  margin: 0;
+}
 /* Catalog.html*/
 
 .page-title {
