@@ -421,9 +421,28 @@ body {
 }
 
 .map {
+  position: relative;
+
   width: 1160px;
   height: 416px;
-  overflow: hidden;
+}
+
+.map img {
+  position: absolute;
+  left: 50%;
+
+  margin-left: -720px;
+}
+
+.map:after {
+  content: "";
+  position: absolute;
+  left: 685px;
+  top: 75px;
+  width: 160px;
+  height: 190px;
+
+  background: url("../img/map-marker.png") no-repeat;
 }
 
 .main-footer {
