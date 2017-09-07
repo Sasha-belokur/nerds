@@ -537,23 +537,84 @@ body {
   margin: 95px auto;
 }
 
-.preferences {
+.filter {
   float: left;
   width: 260px;
+  margin-top: 55px;
+}
+
+.sub-title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.sub-title:first-child {
+  margin-bottom: 55px;
+}
+
+.price-range {
+  visibility: hidden;
+  width: 260px;
+  height: 135px;
+  margin-bottom: 55px;
+}
+
+.catalog {
+  float: right;
+  width: 760px;
+  margin-top: 55px;
+}
+
+.sorting {
+  min-height: 75px;
+}
+
+.sorting h3 {
+  float: left;
+}
+
+.sorting ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+
+  list-style: none;
+}
+
+.sorting li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.sorting li:last-child {
+  margin-right: 50px;
+}
+
+.sort-type {
+  font-size: 14px;
+}
+
+.sorting a {
+  color: #000000;
+  font: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+}
+
+.sort-type.active a {
+  opacity: 1;
 }
 
 .templates {
-  float: right;
-  width: 760px;
-
   font-size: 0;
-}
-
-.templates-item {
-  display: inline-block;
-  width: 360px;
-  margin-right: 40px;
-  margin-bottom: 35px;
 }
 
 .templates-item:nth-child(2n) {

@@ -23,15 +23,17 @@
     <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header> 
   <main class="container clearfix">
-    <div class="preferences">
+    <div class="filter">
       <form action="#" method="get">
-        <h3>Стоимость</h3>
-        <div class="range"></div>
-        <label for="min-price">От</label>
-        <input type="text" name="min-price" id="min-price">
-        <label for="max-price">До</label>
-        <input type="text" name="max-price" id="max-price">
-        <h3>Сетка</h3>
+        <h3 class="sub-title">Стоимость</h3>
+        <div class="price-range">
+          <div class="range"></div>
+          <label for="min-price">От</label>
+          <input type="text" name="min-price" id="min-price">
+          <label for="max-price">До</label>
+          <input type="text" name="max-price" id="max-price">
+        </div>
+        <h3 class="sub-title">Сетка</h3>
         <ul class="template-grid">
           <li>
             <label for="adaptive">Адаптивная</label>
@@ -46,7 +48,7 @@
             <input type="radio" name="grid" id="rubber">
           </li>
         </ul>
-        <h3>Особенности</h3>
+        <h3 class="sub-title">Особенности</h3>
         <ul class="template-features">
           <li>
             <label for="slider">Слайдер</label>
@@ -72,10 +74,10 @@
       </form>
     </div>
     <div class="catalog">
-      <div class="sorting">
-        <h3>Сортировать</h3>
+      <div class="sorting clearfix">
+        <h3 class="sub-title">Сортировать</h3>
         <ul>
-          <li class="sort-type">
+          <li class="sort-type active">
             <a href="#">По цене</a>
           </li>
           <li class="sort-type">
@@ -84,7 +86,7 @@
           <li class="sort-type">
             <a href="#">По названию</a>
           </li>
-          <li class="sort-direction desc">
+          <li class="sort-direction desc active">
             <a href="#" title="По убыванию">По убыванию</a>
           </li>
           <li class="sort-direction asc">
@@ -94,8 +96,8 @@
       </div>
       <div class="templates">
         <div class="templates-item">
-          <img src="img/template-sedona.jpg" alt="Screenshoot of template Sedona" width="360" height="576">
           <header class="template-header"><span></span></header>
+          <img src="img/template-sedona.jpg" alt="Screenshoot of template Sedona" width="360" height="576">
           <div class="template-description">
             <h2>Sedona</h2>
             <p>Информационный сайт для туристов</p>
