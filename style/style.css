@@ -624,14 +624,18 @@ body {
   width: 360px;
   margin-right: 40px;
   margin-bottom: 35px;
-  padding-top: 41px;
-  
-  box-shadow: 0 0 
-}
+  padding-top: 40px;
 
+  overflow: hidden;
+  transition: all 0.7s;
+}
 
 .templates-item:nth-child(2n) {
   margin-right: 0px;
+}
+
+.templates-item:hover {
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
 .template-header {
@@ -645,6 +649,8 @@ body {
   background-color: #e5e5e5;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  
+  transition: all 0.7s;
 }
 
 .templates-item:hover .template-header {
@@ -688,7 +694,7 @@ body {
 
 .template-description {
   position: absolute;
-  bottom: 0;
+  bottom: -230px;
 
   width: 360px;
   min-height: 230px;
@@ -698,6 +704,12 @@ body {
   text-align: center;
 
   background-color: #eeeeee;
+
+  transition: all 0.7s;
+}
+
+.templates-item:hover .template-description {
+  bottom: 0;
 }
 
 .template-description h2 {
