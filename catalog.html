@@ -29,12 +29,18 @@
     <div class="filter">
       <form action="#" method="get">
         <h3 class="sub-title">Стоимость</h3>
-        <div class="price-range">
-          <div class="range"></div>
-          <label for="min-price">От</label>
-          <input type="text" name="min-price" id="min-price">
-          <label for="max-price">До</label>
-          <input type="text" name="max-price" id="max-price">
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="width: 70%"></div>
+              <div class="toggle min-toogle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+          </div>
+          <div class="price-controls">
+            от <input class="min-price" type="text" value="0">
+            до <input class="max-price" type="text" value="15000">
+          </div>
         </div>
         <h3 class="sub-title">Сетка</h3>
         <ul class="template-grid">
@@ -147,7 +153,7 @@
           <img src="img/template-aplus.jpg" alt="Screenshoot of template Aplus" width="360" height="576">
           <header class="template-header"><span></span></header>
           <div class="template-description">
-            <h2>Aplus</h2>
+            <h2>Sedona</h2>
             <p>Ladning page для продажи онлайн курсов</p>
             <a href="#" class="btn btn-red" title="купить">3012 грн.</a>
           </div>
