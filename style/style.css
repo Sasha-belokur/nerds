@@ -142,8 +142,6 @@ body {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-
-
 }
 
 .gallery-slide p {
@@ -638,8 +636,12 @@ input:checked + .checkbox-input span::after {
   margin-right: 25px;
 }
 
-.sorting li:last-child {
-  margin-right: 50px;
+.sort-direction {
+  position: relative;
+}
+
+.sort-direction.desc {
+  margin-left: 45px;
 }
 
 .sort-type {
@@ -653,9 +655,34 @@ input:checked + .checkbox-input span::after {
   text-transform: uppercase;
 
   opacity: 0.3;
+  transition: all 0.3s;
 }
 
-.sort-type.active a {
+.sorting a:hover {
+  opacity: 0.6;
+}
+
+.sort-direction a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0; 
+  height: 0; 
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 9px solid #000000;
+}
+
+.sort-direction.desc {
+  bottom: 9px;
+
+  transform: rotate(180deg);
+}
+
+.sorting .active a,
+.sorting a:active {
   opacity: 1;
 }
 
