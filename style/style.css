@@ -195,8 +195,6 @@ body {
 
   opacity: 0;
   filter: blur(5px);
-
-  transition: all 0.7s;
 }
 
 .slide:nth-child(1) {
@@ -214,8 +212,16 @@ body {
 #slide-1:checked ~ .slides .slide:nth-child(1),
 #slide-2:checked ~ .slides .slide:nth-child(2),
 #slide-3:checked ~ .slides .slide:nth-child(3) {
-  opacity: 1;
-  filter: blur(0px);
+  animation-name: change-slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes change-slide {
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
 
 .slide h2 {
@@ -1023,6 +1029,40 @@ input:checked + .checkbox-input span::after {
   left: 50%;
 
   margin-left: -720px;
+}
+
+.map .contacts {
+  position: absolute;
+  left: 0;
+  top: 50px;
+
+  width: 220px;
+  height: 210px;
+  padding: 50px;
+
+  background-color: #ffffff;
+}
+
+.contacts b {
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts .btn {
+  position: absolute;
+  bottom: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .map:after {
