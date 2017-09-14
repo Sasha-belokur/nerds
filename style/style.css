@@ -1171,6 +1171,7 @@ input:checked + .checkbox-input span::after {
   left: 50%;
   z-index: 100;
 
+  display: none;
   width: 760px;
   height: 430px;
   margin-left: -480px;
@@ -1183,6 +1184,10 @@ input:checked + .checkbox-input span::after {
 
   background-color: #ffffff;
   box-shadow: 0 0 50px 10px #000000;
+}
+
+.modal-window-show {
+  display: block;
 }
 
 .modal-window-write-us h2 {
@@ -1251,6 +1256,36 @@ input:checked + .checkbox-input span::after {
 .modal-window-write-us .btn {
   padding-left: 80px;
   padding-right: 80px;
+}
+
+.modal-window-write-us .close-window {
+  position: absolute;
+  top: 80px;
+  right: 75px;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.modal-window-write-us .close-window::before,
+.modal-window-write-us .close-window::after {
+  content: "";
+  position: absolute;
+
+  width: 5px;
+  height: 27px;
+
+  background-color: #FECCCD;
+}
+
+.modal-window-write-us .close-window::before {
+  transform: rotate(45deg);
+}
+
+.modal-window-write-us .close-window::after {
+  transform: rotate(-45deg);
 }
 
 
