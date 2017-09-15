@@ -1167,13 +1167,14 @@ input:checked + .checkbox-input span::after {
 
 .modal-window-write-us {
   position: fixed;
-  bottom: 100px;
+  top: 50%;
   left: 50%;
   z-index: 100;
 
   display: none;
   width: 760px;
   height: 430px;
+  margin-top: -295px;
   margin-left: -480px;
   padding-top: 75px;
   padding-left: 100px;
@@ -1224,17 +1225,40 @@ input:checked + .checkbox-input span::after {
   line-height: 18px;
 }
 
-.modal-window-write-us input[type="text"] {
-  width: 360px;
-  padding: 14px;
+.modal-window-write-us input,
+.modal-window-write-us textarea {
   box-sizing: border-box;
 
-  font: inherit;
+  color: #000000;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 18px;
 
   border: 2px solid #d7dcde;
   border-radius: 3px;
+
+}
+
+.modal-window-write-us input:hover,
+.modal-window-write-us textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-window-write-us input:focus,
+.modal-window-write-us textarea:focus {
+  border-color: #000000;
+}
+
+.invalid-input {
+  color: #e74246;
+
+  border-color: #e74246;
+}
+
+.modal-window-write-us input[type="text"] {
+  width: 360px;
+  padding: 14px;
 }
 
 .message-input {
@@ -1246,15 +1270,6 @@ input:checked + .checkbox-input span::after {
   min-height: 120px;
   box-sizing: border-box;
   padding: 14px;
-
-  font-size: 16px;
-  font: inherit;
-  font-weight: 400;
-  line-height: 18px;
-
-  border: 2px solid #d7dcde;
-  border-radius: 3px;
-
 
   resize: none;
 }
