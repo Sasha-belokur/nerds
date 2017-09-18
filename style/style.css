@@ -1280,6 +1280,7 @@ input:checked + .checkbox-input span::after {
 
 .modal-window-write-us input:focus,
 .modal-window-write-us textarea:focus {
+  outline: none;
   border-color: #000000;
 }
 
